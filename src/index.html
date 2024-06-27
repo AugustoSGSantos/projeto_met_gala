@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Met Gala</title>
+    <title>Aniversário tema: Met Gala</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,10 +19,79 @@
         <div class="container">
             <img class="hero__logo" src="./images/vogue-logo.png" alt="VOGUE">
             <p class="hero__text">
-                O maior evento de moda dos EUA começa em 10d 12h 20m 15s
+                O Aniversário de Augusto com o tema: Met Gala começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Quinta Avenida - Manhattan - Nova Iorque
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de US$50,000 por assento
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        04/007/2024 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--metgala">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Tema da festa: Met Gala</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt pariatur dolores eaque blanditiis nesciunt id harum animi rem obcaecati dolor dignissimos nulla perspiciatis, fugit similique doloribus placeat officia tempora.
+                </p>
+            </div>
+            <img class="event__image" src="./images/metgala.png" alt="Met Gala">
+        </div>
+    </section>
+
+    <section class="event event--convidados-especiais event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Convidados ilustres: James Harden e Lil Baby</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt pariatur dolores eaque blanditiis nesciunt id harum animi rem obcaecati dolor dignissimos nulla perspiciatis, fugit similique doloribus placeat officia tempora.
+                </p>
+            </div>
+            <img class="event__image" src="./images/hardenlil.jpg" alt="James Harden & Lil Baby">
+        </div>
+    </section>
+
+    <section class="event event--astros-nba">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Astros da NBA convidados: Russell Westbrook e Shai Gilgeous-Alexander</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt pariatur dolores eaque blanditiis nesciunt id harum animi rem obcaecati dolor dignissimos nulla perspiciatis, fugit similique doloribus placeat officia tempora.
+                </p>
+            </div>
+            <img class="event__image" src="./images/shaiwest.jpg" alt="Westbrook & Shai ">
+        </div>
+    </section>
+
+    <section class="event event--atriz event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Convidado(s) especiais confirmados: Zendaya</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt pariatur dolores eaque blanditiis nesciunt id harum animi rem obcaecati dolor dignissimos nulla perspiciatis, fugit similique doloribus placeat officia tempora.
+                </p>
+            </div>
+            <img class="event__image" src="./images/zendaya.jpg" alt="Zendaya">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
